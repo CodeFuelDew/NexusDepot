@@ -1,0 +1,79 @@
+.header {
+    height:60px;
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0;
+    z-index: 100;
+    background-color: rgb(19,25,33);
+}
+
+.nav-sprite {
+    background-image: url(https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-2x-reorg-privacy._CB587940754_.png);
+    background-size:350px;
+}
+
+#nav-logo .nav-logo-base {
+    float:left;
+    text-indent:-500px;
+    background-position: -7px -41px;
+    width:97px;
+    height:49px;
+    margin:1px 8px 0 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.highlight_on_hover:hover {
+    border: 1px solid bisque;
+}
+
+.header__search {
+    display:flex;
+    flex:1;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.header__searchInput {
+    height:12px;
+    padding: 10px;
+    border: none;
+    width:100%;
+}
+
+.header__nav {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.header__option {
+    display:flex;
+    flex-direction: column;
+    padding-left:8px;
+    padding-right: 8px;
+    color: white;
+    height:50px;
+    justify-content: center;
+}
+
+.header__optionLineOne {
+    font-size:12px;
+}
+
+.header__optionLineTwo {
+    font-size:14px;
+    font-weight: 800;
+}
+
+.header__optionBasket {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    color:white;
+}
+
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
