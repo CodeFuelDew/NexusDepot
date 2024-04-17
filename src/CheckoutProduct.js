@@ -9,7 +9,7 @@ const CheckoutProduct = ({id, image, title, price, rating}) => {
     }
 
     return (
-        <div className="checkoutProduct">
+        <div className="checkoutProduct" key={id}>
             <img className="checkoutProduct__image" src={image} alt=""/>
             <div className="checkoutProduct__info">
                 <p className="checkoutProduct__title">{title}</p>
@@ -19,7 +19,7 @@ const CheckoutProduct = ({id, image, title, price, rating}) => {
                     rating ?
                     Array(rating)
                     .fill()
-                    .map((_i) => (<p>⭐</p>))
+                    .map((_i) => (<p key={_i}>⭐</p>))
                     : null
                 }
                 </div>

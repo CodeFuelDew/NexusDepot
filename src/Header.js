@@ -38,12 +38,19 @@ const Header = () => {
                         & Orders
                     </span>
                 </div>
-                <div className="header__option"></div>
+                {/* <div className="header__option"></div> */}
                 <Link to="/checkout">
-                    <div className="header__option header__optionBasket">
-                        <span className="header__optionLineTwo header__basketCount">
-                            {basket?.length}
-                        </span>
+                    <div className="cart-container">
+                        <div className="header__option header__optionBasket">
+                            <span className="header__optionLineTwo header__basketCount">
+                                {basket?.length}
+                            </span>
+                            <span className="nav-cart-icon nav-sprite"/>
+                        </div>
+                        {/* <div className="cart-text-container">
+                            <span></span>
+                            <span>&nbsp;Cart&nbsp;</span>
+                        </div> */}
                     </div>
                 </Link>
             </div>

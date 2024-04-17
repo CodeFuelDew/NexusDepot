@@ -68,12 +68,32 @@
 
 .header__optionBasket {
     display:flex;
-    flex-direction:row;
     align-items: center;
     color:white;
 }
 
-.header__basketCount {
-    margin-left: 10px;
-    margin-right: 10px;
+.nav-cart-icon {
+    background-position: -10px -340px;
+    width: 38px;
+    height: 26px;
+    display:flex;
+    
 }
+
+.header__basketCount {
+    margin-left: 5px;    
+    position:absolute;
+    top:8px;
+    color:#f08804;
+}
+
+.cart-container {
+    display:flex;
+    margin-right:3px;
+}
+
+/* .cart-text-container {
+    display:flex;
+    flex-direction: column;
+    position:static
+} */
